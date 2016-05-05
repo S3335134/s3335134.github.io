@@ -1,0 +1,45 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <h1>Data Exploration Tool</h1>
+  {{>info}}
+  {{>experimentSelect}}
+  {{>sessionSelect}}
+  {{>parameterSelect}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="info">
+  <h2>Select an Experiment</h2>
+</template>
+
+<template name="experimentSelect">
+  Select Experiment: <input list="experiments" id="mylist">
+  <datalist id="experiments">
+    <option value="EX39530_1421125363.41355"></option>
+  </datalist>
+</template>
+
+<template name="sessionSelect">
+  Select Session: <input list="sessions" id="mylist">
+  <datalist id="sessions">
+    <option value="S43945033_1421125363.41355"></option>
+  </datalist>
+</template>
+
+<template name="parameterSelect">
+  Select Parameter: <input list="parameter_values" id="mylist">
+  <datalist id="parameter_values">
+    <option value="Accelerometer"></option>
+  </datalist>
+</template>
+
+<template name="graph">
+  <h1>Graph</h1>
+</template>
